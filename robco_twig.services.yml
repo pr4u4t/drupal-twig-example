@@ -1,0 +1,5 @@
+services:
+  robco_twig.twig_extension:
+    class: Drupal\robco_twig\TwigExtension\FilterTwig
+    tags:
+      - { name: twig.extension }
