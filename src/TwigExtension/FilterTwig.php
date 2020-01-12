@@ -24,7 +24,7 @@
   	/**
    	* Replaces all numbers from the string.
    	*/
-  	public static function htmlContent($html,$attr,$value) {
-  		return HtmlFilter::getContent($html,$attr,$value); 
+  	public static function htmlContent($html,$attr,$value,$elemClass = NULL) {
+  		return HtmlFilter::getContent($html,$attr,$value,$elemClass); 
   	}
 }
