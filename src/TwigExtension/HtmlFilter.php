@@ -14,4 +14,5 @@
 			$tempDom->appendChild($tempImported);
 			if(!($newHtml = $tempDom->saveHTML())) return -7;
 			return $newHtml;
+		}
 	}

@@ -10,7 +10,7 @@
   	*/
   	public function getFilters() {
     		return [
-      			new \Twig_SimpleFilter('htmlcontent', array($this, 'htmlContent')),
+      			new \Twig_SimpleFilter('htmlcontent', array($this, 'htmlContent'))
     		];
   	}
  
