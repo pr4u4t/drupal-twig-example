@@ -3,7 +3,7 @@
 
 	class HtmlFilter{
 
-		public static getContent($html,$attr,$value){
+		public static function getContent($html,$attr,$value){
 			if(!($dom = new DOMDocument()))	return -1;
 			$dom->loadHTML($html);
 			if(!($xpath = new DOMXpath($dom))) return -2;
