@@ -12,7 +12,7 @@
 			if(!($tempDom = new \DOMDocument())) return -5;
 			if($elemClass !== NULL && $elemClass != '' && is_string($elemClass)){ 
 				$pClass = $keepme->getAttribute("class");
-				$keepme->setAttribute("$pClass $elemClass");
+				$keepme->setAttribute("class","$pClass $elemClass");
 			}
 			if(!($tempImported = $tempDom->importNode($keepme, true))) return -6;
 			$tempDom->appendChild($tempImported);
