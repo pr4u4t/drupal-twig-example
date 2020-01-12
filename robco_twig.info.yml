@@ -1,5 +1,5 @@
 name: RobcoTwig
 type: module
-description: miscellaneous twig helper filters
+description: Miscellaneous twig helper filters
 core: 8.x
 version: '8.x-1.0-beta1'
