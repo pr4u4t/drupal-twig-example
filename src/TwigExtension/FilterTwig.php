@@ -10,7 +10,8 @@
   	*/
   	public function getFilters() {
     		return [
-      			new \Twig_SimpleFilter('htmlcontent', array($this, 'htmlContent'))
+			new \Twig_SimpleFilter('htmlcontent', array($this, 'htmlContent')),
+			new \Twig_SimpleFilter('insertinto', array($this, 'htmlInsertInto'))
     		];
   	}
  
@@ -26,5 +27,9 @@
    	*/
   	public static function htmlContent($html,$attr,$value,$elemClass = NULL) {
   		return HtmlFilter::getContent($html,$attr,$value,$elemClass); 
-  	}
+	}
+
+	public static function htmlInsertInto($html,$pattr,$pvalue,$eTag,$eattr = NULL,$data = NULL){
+		return HtmlInsertInto::getContent($html,$pattr,$pvalue,$eTag,$eattr,$data);
+	}
 }
